@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Study Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AI Study Summarizer</h1>
+    <textarea id="notes" placeholder="Paste your notes here..."></textarea>
+    <button id="summarizeBtn">Summarize</button>
+    <div id="loading" style="display:none;">⏳ Summarizing...</div>
+    <h2>Summary:</h2>
+    <div id="result"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
